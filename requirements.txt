@@ -1,0 +1,8 @@
+langchain
+langchain-openai
+python-dotenv
+folium
+googlemaps
+
+
+# python -m pip install -r requirements.txt om pip install -r requirements.txt inte funkar
