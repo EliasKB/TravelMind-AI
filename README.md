@@ -9,10 +9,10 @@
 - [Installation](#-installation)
 - [Configuration](#-configuration)
 - [Usage](#-usage)
-- [Project Structure](#-project-structure)
-- [Google Cloud Setup](#-Google Cloud Setup)
-- [Email Setup](#-Email Setup)
-- [Testing the APIs](#-usaTesting the APIsge)
+- [Project Structure](#-Project-Structure)
+- [Google Cloud Setup](#-Google-Cloud-Setup)
+- [Gmail Setup](#-Gmail-Setup)
+- [Testing the APIs](#-Testing-the-APIs)
 - [Customization](#-Customization)
 - [Troubleshooting](#-Troubleshooting)
 - [Contributing](#-Contributing)
@@ -167,7 +167,7 @@ AI-Places-Explorer/
 └── README.md                    # Project documentation
 ```
 
-🧰 Customization
+##🧰 Customization
 1. Change OpenAI Model
 
 In main.py, update:
