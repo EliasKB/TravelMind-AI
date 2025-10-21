@@ -110,6 +110,27 @@ this ensures requests to the APIs are authorized. At the fist time, you will rec
 4. Use this password in your `.env` file (not your regular Gmail password)
 
 
+## 🧪 Testing the APIs
+Run the test scripts to confirm API setup:
+
+**Test Google Maps Key*
+```bash
+python test_googleMapsAPIKey.py
+```
+If your key prints correctly, it’s valid.
+
+**Test Geocoding & Places**
+```bash
+python test_geocode_Gplace_API.py
+```
+✅ You should see valid JSON with "status": "OK".
+
+**Test Gmail Integration**
+```bash
+python test_gmail_sender.py
+```
+
+
 ## 🧩 Usage
 Start the Chatbot
 ```bash
@@ -146,25 +167,7 @@ AI-Places-Explorer/
 └── README.md                    # Project documentation
 ```
 
-## 🧪 Testing the APIs
-Run the test scripts to confirm API setup:
 
-**Test Google Maps Key*
-```bash
-python test_googleMapsAPIKey.py
-```
-If your key prints correctly, it’s valid.
-
-**Test Geocoding & Places**
-```bash
-python test_geocode_Gplace_API.py
-```
-✅ You should see valid JSON with "status": "OK".
-
-**Test Gmail Integration**
-```bash
-python test_gmail_sender.py
-```
 
 
 
