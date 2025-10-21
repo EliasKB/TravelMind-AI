@@ -73,11 +73,11 @@ GMAIL_APP_PASSWORD=your_app_password_here
 
 ```mermaid
 graph TD;
-    A[User Question] --> B[OpenAI Model (LangChain)];
+    A[User Question] --> B[OpenAI Model LangChain];
     B --> C[AI Generates List of Places];
     C --> D[Regex Extracts Names & Addresses];
     D --> E[Google Geocoding API];
-    E --> F[Google Places API (fallback)];
+    E --> F[Google Places API fallback];
     F --> G[Folium Map Visualization];
     F --> H[KML File Export];
 ```
