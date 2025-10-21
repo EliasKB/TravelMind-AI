@@ -1,4 +1,4 @@
-# 🎥 Travel Mind AI Agent
+# 🌍📌 Travel Mind AI Agent
 
 **An AI-powered travel and discovery assistant that recommends top-rated places, retrieves precise Google Maps coordinates, and exports them to KML for visualization.**
 
