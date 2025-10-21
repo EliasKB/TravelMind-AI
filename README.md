@@ -113,7 +113,7 @@ this ensures requests to the APIs are authorized. At the fist time, you will rec
 ## 🧪 Testing the APIs
 Run the test scripts to confirm API setup:
 
-**Test Google Maps Key*
+**Test Google Maps Key**
 ```bash
 python test_googleMapsAPIKey.py
 ```
@@ -167,131 +167,32 @@ AI-Places-Explorer/
 └── README.md                    # Project documentation
 ```
 
+🧰 Customization
+1. Change OpenAI Model
+
+In main.py, update:
+```python
+model = ChatOpenAI(
+    model="gpt-5",  # or "gpt-4o"
+    temperature=0.7,
+    api_key=openai_api_key
+)
+```
+3. Change Export Filename
+```python
+def export_to_kml(self, filename="custom_places.kml"):
+```
+
+##🤝 Contributing
+
+1. Fork this repository
+2. Create a new branch (feature-name)
+3. Commit your changes
+4. Push and submit a Pull Request
+Contributions and suggestions are welcome!
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# 🗺️ AI Places ChatBot with Google Maps Integration
-
-An interactive **AI-powered location recommender** built with **LangChain**, **OpenAI**, and **Google Maps APIs**.  
-It suggests attractions, hotels, and landmarks worldwide — then geocodes them using **real Google Maps data** and plots them on a map.
-
----
-
-## 🧰 Features
-
-- Conversational AI using **LangChain + OpenAI GPT-4o-mini**
-- Automatic **address geocoding** and **Places API lookup**
-- Generates interactive **Folium maps**
-- Exports markers to **KML** for Google My Maps
-- Optional **email reporting** of chat logs
-- Includes **test scripts** to validate API keys and Google Cloud setup
-
----
-
-## 🧱 Project Structure
-
-.
-├── main.py
-├── maps_handler.py
-├── prompt.py
-├── gmail_sender.py
-├── requirements.txt
-├── .env
-├── test_geocode_Gplace_API.py
-├── test_googleMapsAPIKey.py
-└── test_gmail_sender.py
-
-
----
-
-## ⚙️ Setup Guide
-
-### 1️⃣ Create a Google Cloud Project
-
-1. Go to [Google Cloud Console](https://console.cloud.google.com/).
-2. Click **"Create Project"** → give it a name (e.g. `AI-Places-Bot`).
-3. Enable **Billing** (required for Maps API requests).
-   - Go to **Billing → Link Billing Account**.
-4. Enable the following APIs:
-   - **Maps JavaScript API**
-   - **Geocoding API**
-   - **Places API**
-   - **Maps Static API** *(optional)*
-5. Generate an **API key**:
-   - Navigate to **APIs & Services → Credentials → Create Credentials → API Key**.
-   - Restrict usage (optional but recommended) to your project’s APIs.
-6. Copy your key and create a `.env` file:
-
-```bash
-GOOGLE_MAPS_API_KEY=your_real_api_key_here
-OPENAI_API_KEY=your_openai_api_key_here
-
-
-2️⃣ Create a Python Virtual Environment
-
-python -m venv venv
-source venv/bin/activate        # on Linux/macOS
-venv\Scripts\activate           # on Windows
-
-pip install -r requirements.txt
-
-3️⃣ Validate Your Setup
-
-Run the following to confirm your environment works:
-# 1. Verify Google API key
-python test_googleMapsAPIKey.py
-
-# 2. Check Geocoding + Places API
-python test_geocode_Gplace_API.py
-
-# 3. Verify Gmail integration (optional)
-python test_gmail_sender.py
-
-✅ If you see "status": "OK" from both APIs → your Google Cloud setup is correct.
-❌ If you see "REQUEST_DENIED" → check that Billing is enabled and API keys are linked to your project.
-
-4️⃣ Run the ChatBot
-python main.py
-
-Example interaction:
-🌍 Welcome to Places AI ChatBot (TEST MODE)!
-You: give me the top 5 temples in Bangkok
-...
-💡 Tip: Type 'map' to view all locations
-💡 Tip: Type 'export' to export as KML
-💡 Tip: Type 'email' to email the conversation log
-
-
-5️⃣ Optional: Export and View on Google Maps
-
-1. Type export in the chatbot → generates pigeon_places.kml.
-2. Visit Google My Maps: https://www.google.com/maps/d/
-3. Create a new map → click Import → select the KML file.
-4. Your AI-recommended locations will appear as markers.
-
-🧪 Test Scripts Included
-| File                         | Purpose                                            |
-| ---------------------------- | -------------------------------------------------- |
-| `test_googleMapsAPIKey.py`   | Checks if your API key is loaded correctly         |
-| `test_geocode_Gplace_API.py` | Confirms Geocoding + Places APIs return valid data |
-| `test_gmail_sender.py`       | Tests Gmail connection & email sending             |
-| `.env`                       | Stores private API keys                            |
+<div align="center">
+Developed with ❤️ by Elias Kamyab
+“Explore the world — one AI query at a time.”
+</div>
