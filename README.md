@@ -70,6 +70,7 @@ GMAIL_APP_PASSWORD=your_app_password_here
 ```
 
 ### 🧠 How It Works
+
 ```mermaid
 graph TD
     A[User Question] --> B[OpenAI Model (LangChain)]
