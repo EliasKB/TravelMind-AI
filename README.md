@@ -7,18 +7,14 @@
 - [Features](#-features)
 - [Prerequisites](#-prerequisites)
 - [Installation](#-installation)
-- [Configuration](#-configuration)
+- [Configuration](#-Configuration)
 - [Usage](#-usage)
 - [Project Structure](#-Project-Structure)
 - [Google Cloud Setup](#-Google-Cloud-Setup)
 - [Gmail Setup](#-Gmail-Setup)
 - [Testing the APIs](#-Testing-the-APIs)
 - [Customization](#-Customization)
-- [Troubleshooting](#-Troubleshooting)
 - [Contributing](#-Contributing)
-- [License](#-License)
-- [Support](#-Support)
-
 
 ## ✨ Features
 
@@ -168,7 +164,7 @@ AI-Places-Explorer/
 └── README.md                    # Project documentation
 ```
 
-##🧰 Customization
+## 🧰 Customization
 1. Change OpenAI Model
 
 In main.py, update:
@@ -184,7 +180,7 @@ model = ChatOpenAI(
 def export_to_kml(self, filename="custom_places.kml"):
 ```
 
-##🤝 Contributing
+## 🤝 Contributing
 
 1. Fork this repository
 2. Create a new branch (feature-name)
