@@ -58,6 +58,7 @@ pip install -r requirements.txt
 ```
 
 ## ⚙️ Configuration
+
 ```env
 OPENAI_API_KEY=your_openai_api_key_here
 GOOGLE_MAPS_API_KEY=your_google_maps_api_key_here
