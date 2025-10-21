@@ -102,12 +102,12 @@ Each Google Maps API key must be attached to a billing account —
 this ensures requests to the APIs are authorized. At the fist time, you will recieve 300$ dollar for free for the first 90 days.
 
 
-## 📧 Email Setup
+## 📧 Gmail Setup
 
-1. Enable 2-Step Verification in your Gmail account.
-2. Go to App Passwords
+1. Enable 2-Factor Authentication on your Google Account
+2. Go to [App Passwords](https://myaccount.google.com/apppasswords)
 3. Create an App Password for “Mail.”
-4. Add the email and password to your .env file.
+4. Use this password in your `.env` file (not your regular Gmail password)
 
 
 ## 🧩 Usage
@@ -165,6 +165,12 @@ python test_geocode_Gplace_API.py
 ```bash
 python test_gmail_sender.py
 ```
+
+
+
+
+
+
 
 
 
