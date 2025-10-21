@@ -1,21 +1,23 @@
-An AI-powered travel and discovery assistant that recommends top-rated places, retrieves precise Google Maps coordinates, and exports them to KML for visualization.
+# 🎥 Travel Mind AI Agent
+
+**An AI-powered travel and discovery assistant that recommends top-rated places, retrieves precise Google Maps coordinates, and exports them to KML for visualization.**
 
 ## 📋 Table of Contents
 
-Features
-Prerequisites
-Installation
-Configuration
-Usage
-Project Structure
-Google Cloud Setup
-Email Setup
-Testing the APIs
-Customization
-Troubleshooting
-Contributing
-License
-Support
+- [Features](#-features)
+- [Prerequisites](#-prerequisites)
+- [Installation](#-installation)
+- [Configuration](#-configuration)
+- [Usage](#-usage)
+- [Project Structure](#-project-structure)
+- [Google Cloud Setup](#-Google Cloud Setup)
+- [Email Setup](#-Email Setup)
+- [Testing the APIs](#-usaTesting the APIsge)
+- [Customization](#-Customization)
+- [Troubleshooting](#-Troubleshooting)
+- [Contributing](#-Contributing)
+- [License](#-License)
+- [Support](#-Support)
 
 
 ## ✨ Features
@@ -42,8 +44,8 @@ Support
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/-....
-cd AI-Places-Explorer
+git clone https://github.com/EliasKB/TravelMind-AI.git
+cd TravelMind-AI
 ```
 
 ### 2. Create a Virtual Environment
