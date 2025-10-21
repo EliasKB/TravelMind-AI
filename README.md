@@ -7,7 +7,7 @@
 - [Features](#-features)
 - [Prerequisites](#-prerequisites)
 - [Installation](#-installation)
-- [Configuration](#-Configuration)
+- [Configuration](#-configuration)
 - [Usage](#-usage)
 - [Project Structure](#-Project-Structure)
 - [Google Cloud Setup](#-Google-Cloud-Setup)
