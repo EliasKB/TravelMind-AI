@@ -15,7 +15,7 @@
 - [Testing the APIs](#-Testing-the-APIs)
 - [Customization](#-Customization)
 - [Contributing](#-Contributing)
-- [Contr](#-googlecloudsetup)
+- [Contr](#-google-cloud-setup)
 
 ## ✨ Features
 
