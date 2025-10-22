@@ -57,7 +57,7 @@ source venv/bin/activate    # macOS/Linux
 pip install -r requirements.txt
 ```
 
-## ⚙️ Configuration
+## 🔑 Configuration
 
 ```env
 OPENAI_API_KEY=your_openai_api_key_here
