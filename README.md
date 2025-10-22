@@ -169,61 +169,41 @@ After exporting your .kml file from TravelMind AI:
 1. In your My Maps project, click on the layer you want to import into
 2. Click “Import”
 3. Either:
-   Drag & Drop your exported file (e.g. pigeon_places.kml), or
-   Choose “Select a file from Google Drive” if you’ve uploaded it there
-   Wait a few seconds — your markers will appear on the map
+- Drag & Drop your exported file (e.g. pigeon_places.kml), or
+- Choose “Select a file from Google Drive” if you’ve uploaded it there
+4. Wait a few seconds — your markers will appear on the map
 
 **🔹 Step 3 — View Your Map in the Google Maps App**
 
-Open the Google Maps app on your phone
-
-Tap Saved → Maps (or Your places → Maps)
-
-You’ll see your custom map (e.g. my_travel_map) under “Maps you’ve created in My Maps”
-
-Tap it to open — your custom map loads inside standard Google Maps
-
-If location services are enabled, you’ll see your live position relative to your markers
+1. Open the Google Maps app on your phone
+2. Tap Saved → Maps (or Your places → Maps)
+3. You’ll see your custom map (e.g. my_travel_map) under “Maps you’ve created in My Maps”
+4. Tap it to open — your custom map loads inside standard Google Maps
+5. If location services are enabled, you’ll see your live position relative to your markers
 
 **🔹 Step 4 — Switch Between Custom and Regular Maps**
 
-To return to the standard Google Map, tap the back arrow or close the custom map tab
-
-To reopen it, go again to Saved → Maps → my_travel_map
+- To return to the standard Google Map, tap the back arrow or close the custom map tab
+- To reopen it, go again to Saved → Maps → my_travel_map
 
 **🔹 Step 5 — Removing or Cleaning Up Your Custom Map**
 
 If you want to remove it later:
 
-Visit Google My Maps
- on desktop
-
-Open your map (my_travel_map)
-
-You can:
-
-Delete individual markers or layers, or
-
-Click Menu → Delete map to remove it completely
-
-Once deleted, it disappears from your Google Maps app as well
+1. Visit Google My Maps(https://www.google.com/maps/d/) on desktop
+2. Open your map (my_travel_map)
+3. You can:
+- Delete individual markers or layers, or
+- Click Menu → Delete map to remove it completely
+4. Once deleted, it disappears from your Google Maps app as well
 
 **🔹 Step 6 — Offline Use During Travel**
 
 Before traveling:
 
-Open the Google Maps app
-
-Go to Offline maps → Select your area (e.g. Thailand) → Download
-
-You can now use your custom map offline with all markers visible
-
-
-
-
-
------------
-
+1. Open the Google Maps app
+2. Go to Offline maps → Select your area (e.g. Thailand) → Download
+3. You can now use your custom map offline with all markers visible
 
 
 ## 📁 Project Structure
@@ -268,5 +248,5 @@ Contributions and suggestions are welcome!
 
 
 <div align="center">
-Developed with by Elias Kamyab
+Developed with ❤️ by Elias Kamyab
 </div>
