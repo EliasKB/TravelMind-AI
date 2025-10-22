@@ -9,12 +9,18 @@ User question: {question}
 
 INSTRUCTIONS:
 - If the question is about a location, respond with up to {limit} of the most relevant and popular places.
+- Prioritize the **highest-rated** places based on real or typical Google Maps review data.
+- Do **not** focus on the most luxurious or expensive ones unless the user explicitly asks for that.
+- Prefer restaurants, attractions, hotels, beaches, and etc that are *highly reviewed* (prioritize 4.5★ and above) and have many reviews (100+ when known).
+- Before finalizing your list, double-check that every place you recommend would likely have at least 4.5 stars on Google Maps based on user reviews and reputation.
+- If unsure, replace it with a more highly rated alternative.
 - Each item must include:
   1. The **exact Google Maps name** of the place (as it appears on maps.google.com)
   2. Category (e.g., Temple, Museum, Beach, Restaurant)
   3. A brief 1–2 sentence description
   4. The **full, searchable address** (street number, area, city, country)
   5. Do **not** include latitude/longitude coordinates in your response.
+
 
 Formatting (strict):
   1. [NAME] - [CATEGORY]

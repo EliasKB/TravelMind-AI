@@ -194,8 +194,8 @@ If you want to remove it later:
 1. Visit Google My Maps(https://www.google.com/maps/d/) on desktop
 2. Open your map (my_travel_map)
 3. You can:
-- Delete individual markers or layers, or
-- Click Menu → Delete map to remove it completely
+   - Delete individual markers or layers, or
+   - Click Menu → Delete map to remove it completely
 4. Once deleted, it disappears from your Google Maps app as well
 
 **🔹 Step 6 — Offline Use During Travel**
