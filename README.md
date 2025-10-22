@@ -10,7 +10,7 @@
 - [Configuration](#-configuration)
 - [Usage](#-usage)
 - [Project Structure](#-Project-Structure)
-- [Google Cloud Setup]
+- [Google Cloud Setup](#-Google Cloud Setup)
 - [Gmail Setup](#-Gmail-Setup)
 - [Testing the APIs](#-Testing-the-APIs)
 - [Customization](#-Customization)
