@@ -9,8 +9,9 @@
 - [Installation](#-installation)
 - [Configuration](#-configuration)
 - [Usage](#-usage)
+- [Google My Maps Integration](#-Google-My-Maps-Integration)
 - [Project Structure](#-Project-Structure)
-- [Google cloud Setup](#-Google-Cloud-Setup)
+- [Google Cloud Setup](#-Google-Cloud-Setup)
 - [Gmail Setup](#-Gmail-Setup)
 - [Testing the APIs](#-Testing-the-APIs)
 - [Customization](#-Customization)
@@ -19,12 +20,12 @@
 ## ✨ Features
 
 - 🤖 **AI-Powered Recommendations** — Uses OpenAI GPT-4o-mini (or GPT-5) to find top attractions restaurants, and hotels worldwide.
-- 🗺️ Google Maps Precision — Combines Geocoding API and Places API for highly accurate latitude/longitude.
-- 📁 KML Export Support — Export discovered places directly to .kml for use in Google My Maps.
-- 🌍 Interactive Folium Map — Instantly generates an HTML map with markers for all found locations.
-- 💌 Email Integration (Optional) — Send your travel recommendations or session summary by email.
-- ⚙️ Dynamic Query Understanding — Handles “top 5,” “best 10,” “show around X city” with automatic result limits.
-- 🔐 Environment-Based Configuration — All keys and credentials stored securely via .env.
+- 🗺️ **Google Maps Precision** — Combines Geocoding API and Places API for highly accurate latitude/longitude.
+- 📁 **KML Export Support** — Export discovered places directly to .kml for use in Google My Maps.
+- 🌍 **Interactive Folium Map** — Instantly generates an HTML map with markers for all found locations.
+- 💌 **Email Integration (Optional)** — Send your travel recommendations or session summary by email.
+- ⚙️ **Dynamic Query Understanding** — Handles “top 5,” “best 10,” “show around X city” with automatic result limits.
+- 🔐 **Environment-Based Configuration** — All keys and credentials stored securely via .env.
 
 
 ## 🔧 Prerequisites
@@ -58,7 +59,7 @@ pip install -r requirements.txt
 ```
 
 ## 🔑 Configuration
-
+Create a .env file in the root directory:
 ```env
 OPENAI_API_KEY=your_openai_api_key_here
 GOOGLE_MAPS_API_KEY=your_google_maps_api_key_here
@@ -140,7 +141,7 @@ Then simply type your question:
 You: Give me the top 5 temples in Bangkok
 ```
 The bot will:
-- Query OpenAI for the best recommendations
+- Use OpenAI to generate top-rated recommendations
 - Fetch accurate coordinates via Google APIs
 - Offer commands like:
 ```pgsql
@@ -149,6 +150,86 @@ The bot will:
 💡 Type 'email'    → Email the session summary  
 💡 Type 'exit'     → Quit the program
 ```
+
+--------------------
+
+
+## 🗺️ Google My Maps Integration
+
+###🔹 Step 1 — Create Your Custom Map
+1. Go to Google My Maps
+2. Click “+ Create a New Map”
+3. Rename it (e.g. my_travel_map)
+4. Optionally, click “Add layer” to organize your points (e.g. Temples, Beaches, Restaurants)
+
+**🔹 Step 2 — Import Your KML File**
+
+After exporting your .kml file from TravelMind AI:
+
+In your My Maps project, click on the layer you want to import into
+
+Click “Import”
+
+Either:
+
+Drag & Drop your exported file (e.g. pigeon_places.kml), or
+
+Choose “Select a file from Google Drive” if you’ve uploaded it there
+
+Wait a few seconds — your markers will appear on the map
+
+🔹 Step 3 — View Your Map in the Google Maps App
+
+Open the Google Maps app on your phone
+
+Tap Saved → Maps (or Your places → Maps)
+
+You’ll see your custom map (e.g. my_travel_map) under “Maps you’ve created in My Maps”
+
+Tap it to open — your custom map loads inside standard Google Maps
+
+If location services are enabled, you’ll see your live position relative to your markers
+
+🔹 Step 4 — Switch Between Custom and Regular Maps
+
+To return to the standard Google Map, tap the back arrow or close the custom map tab
+
+To reopen it, go again to Saved → Maps → my_travel_map
+
+🔹 Step 5 — Removing or Cleaning Up Your Custom Map
+
+If you want to remove it later:
+
+Visit Google My Maps
+ on desktop
+
+Open your map (my_travel_map)
+
+You can:
+
+Delete individual markers or layers, or
+
+Click Menu → Delete map to remove it completely
+
+Once deleted, it disappears from your Google Maps app as well
+
+🔹 Step 6 — Offline Use During Travel
+
+Before traveling:
+
+Open the Google Maps app
+
+Go to Offline maps → Select your area (e.g. Thailand) → Download
+
+You can now use your custom map offline with all markers visible
+
+
+
+
+
+-----------
+
+
 
 ## 📁 Project Structure
 ```
@@ -192,6 +273,5 @@ Contributions and suggestions are welcome!
 
 
 <div align="center">
-Developed with ❤️ by Elias Kamyab
-“Explore the world — one AI query at a time.”
+Developed with by Elias Kamyab
 </div>
