@@ -15,7 +15,7 @@
 - [Testing the APIs](#-Testing-the-APIs)
 - [Customization](#-Customization)
 - [Contributing](#-Contributing)
-
+ 
 ## ✨ Features
 
 - 🤖 **AI-Powered Recommendations** — Uses OpenAI GPT-4o-mini (or GPT-5) to find top attractions restaurants, and hotels worldwide.
