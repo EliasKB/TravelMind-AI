@@ -1,32 +1,31 @@
-An AI-powered travel and discovery assistant that recommends top-rated places, retrieves precise Google Maps coordinates, and exports them to KML for visualization.
+# 🌍📌 Travel Mind AI Agent
+
+**An AI-powered travel and discovery assistant that recommends top-rated places, retrieves precise Google Maps coordinates, and exports them to KML for visualization.**
 
 ## 📋 Table of Contents
 
-Features
-Prerequisites
-Installation
-Configuration
-Usage
-Project Structure
-Google Cloud Setup
-Email Setup
-Testing the APIs
-Customization
-Troubleshooting
-Contributing
-License
-Support
-
-
+- [Features](#-features)
+- [Prerequisites](#-prerequisites)
+- [Installation](#-installation)
+- [Configuration](#-configuration)
+- [Usage](#-usage)
+- [Google Maps Integration](#google-maps-integration)
+- [Project Structure](#-Project-Structure)
+- [Google Cloud Setup](#google-cloud-setup)
+- [Gmail Setup](#-Gmail-Setup)
+- [Testing the APIs](#-Testing-the-APIs)
+- [Customization](#-Customization)
+- [Contributing](#-Contributing)
+ 
 ## ✨ Features
 
 - 🤖 **AI-Powered Recommendations** — Uses OpenAI GPT-4o-mini (or GPT-5) to find top attractions restaurants, and hotels worldwide.
-- 🗺️ Google Maps Precision — Combines Geocoding API and Places API for highly accurate latitude/longitude.
-- 📁 KML Export Support — Export discovered places directly to .kml for use in Google My Maps.
-- 🌍 Interactive Folium Map — Instantly generates an HTML map with markers for all found locations.
-- 💌 Email Integration (Optional) — Send your travel recommendations or session summary by email.
-- ⚙️ Dynamic Query Understanding — Handles “top 5,” “best 10,” “show around X city” with automatic result limits.
-- 🔐 Environment-Based Configuration — All keys and credentials stored securely via .env.
+- 🗺️ **Google Maps Precision** — Combines Geocoding API and Places API for highly accurate latitude/longitude.
+- 📁 **KML Export Support** — Export discovered places directly to .kml for use in Google My Maps.
+- 🌍 **Interactive Folium Map** — Instantly generates an HTML map with markers for all found locations.
+- 💌 **Email Integration (Optional)** — Send your travel recommendations or session summary by email.
+- ⚙️ **Dynamic Query Understanding** — Handles “top 5,” “best 10,” “show around X city” with automatic result limits.
+- 🔐 **Environment-Based Configuration** — All keys and credentials stored securely via .env.
 
 
 ## 🔧 Prerequisites
@@ -42,8 +41,8 @@ Support
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/-....
-cd AI-Places-Explorer
+git clone https://github.com/EliasKB/TravelMind-AI.git
+cd TravelMind-AI
 ```
 
 ### 2. Create a Virtual Environment
@@ -59,7 +58,8 @@ source venv/bin/activate    # macOS/Linux
 pip install -r requirements.txt
 ```
 
-## ⚙️ Configuration
+## 🔑 Configuration
+Create a .env file in the root directory:
 ```env
 OPENAI_API_KEY=your_openai_api_key_here
 GOOGLE_MAPS_API_KEY=your_google_maps_api_key_here
@@ -68,18 +68,20 @@ GMAIL_APP_PASSWORD=your_app_password_here
 ```
 
 ### 🧠 How It Works
+
 ```mermaid
-graph TD
-    A[User Question] --> B[OpenAI Model (LangChain)]
-    B --> C[AI Generates List of Places]
-    C --> D[Regex Extracts Names & Addresses]
-    D --> E[Google Geocoding API]
-    E --> F[Google Places API (fallback)]
-    F --> G[Folium Map Visualization]
-    F --> H[KML File Export]
+graph TD;
+    A[User Question] --> B[OpenAI Model LangChain];
+    B --> C[AI Generates List of Places];
+    C --> D[Regex Extracts Names & Addresses];
+    D --> E[Google Geocoding API];
+    E --> F[Google Places API fallback];
+    F --> G[Folium Map Visualization];
+    F --> H[KML File Export];
 ```
 
-## 🗺️ Google Cloud Setup
+## 🗺️ Google Cloud Setup <a name="google-cloud-setup"></a>
+
 Step 1: Create a Project
 1. Visit [Google Cloud Console](https://console.cloud.google.com/)
 2. Create a new project or select existing one
@@ -100,54 +102,18 @@ Each Google Maps API key must be attached to a billing account —
 this ensures requests to the APIs are authorized. At the fist time, you will recieve 300$ dollar for free for the first 90 days.
 
 
-## 📧 Email Setup
+## 📧 Gmail Setup
 
-1. Enable 2-Step Verification in your Gmail account.
-2. Go to App Passwords
+1. Enable 2-Factor Authentication on your Google Account
+2. Go to [App Passwords](https://myaccount.google.com/apppasswords)
 3. Create an App Password for “Mail.”
-4. Add the email and password to your .env file.
+4. Use this password in your `.env` file (not your regular Gmail password)
 
-
-## 🧩 Usage
-Start the Chatbot
-```bash
-python main.py
-```
-Then simply type your question:
-```vbnet
-You: Give me the top 5 temples in Bangkok
-```
-The bot will:
-- Query OpenAI for the best recommendations
-- Fetch accurate coordinates via Google APIs
-- Offer commands like:
-```pgsql
-💡 Type 'map'      → View results on an interactive HTML map  
-💡 Type 'export'   → Save locations to pigeon_places.kml  
-💡 Type 'email'    → Email the session summary  
-💡 Type 'exit'     → Quit the program
-```
-
-## 📁 Project Structure
-```
-AI-Places-Explorer/
-│
-├── main.py                     # Chat loop + LangChain/OpenAI integration
-├── maps_handler.py              # Google Maps API logic + map generation
-├── prompt.py                    # Custom prompt template for location queries
-├── gmail_sender.py              # Optional Gmail integration
-├── test_geocode_Gplace_API.py   # Test Google Geocoding & Places API responses
-├── test_googleMapsAPIKey.py     # Verify .env key loading
-├── test_gmail_sender.py         # Test email sending
-├── requirements.txt             # Dependencies
-├── .env                         # Environment variables (not shared)
-└── README.md                    # Project documentation
-```
 
 ## 🧪 Testing the APIs
 Run the test scripts to confirm API setup:
 
-**Test Google Maps Key*
+**Test Google Maps Key**
 ```bash
 python test_googleMapsAPIKey.py
 ```
@@ -165,122 +131,123 @@ python test_gmail_sender.py
 ```
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-# 🗺️ AI Places ChatBot with Google Maps Integration
-
-An interactive **AI-powered location recommender** built with **LangChain**, **OpenAI**, and **Google Maps APIs**.  
-It suggests attractions, hotels, and landmarks worldwide — then geocodes them using **real Google Maps data** and plots them on a map.
-
----
-
-## 🧰 Features
-
-- Conversational AI using **LangChain + OpenAI GPT-4o-mini**
-- Automatic **address geocoding** and **Places API lookup**
-- Generates interactive **Folium maps**
-- Exports markers to **KML** for Google My Maps
-- Optional **email reporting** of chat logs
-- Includes **test scripts** to validate API keys and Google Cloud setup
-
----
-
-## 🧱 Project Structure
-
-.
-├── main.py
-├── maps_handler.py
-├── prompt.py
-├── gmail_sender.py
-├── requirements.txt
-├── .env
-├── test_geocode_Gplace_API.py
-├── test_googleMapsAPIKey.py
-└── test_gmail_sender.py
-
-
----
-
-## ⚙️ Setup Guide
-
-### 1️⃣ Create a Google Cloud Project
-
-1. Go to [Google Cloud Console](https://console.cloud.google.com/).
-2. Click **"Create Project"** → give it a name (e.g. `AI-Places-Bot`).
-3. Enable **Billing** (required for Maps API requests).
-   - Go to **Billing → Link Billing Account**.
-4. Enable the following APIs:
-   - **Maps JavaScript API**
-   - **Geocoding API**
-   - **Places API**
-   - **Maps Static API** *(optional)*
-5. Generate an **API key**:
-   - Navigate to **APIs & Services → Credentials → Create Credentials → API Key**.
-   - Restrict usage (optional but recommended) to your project’s APIs.
-6. Copy your key and create a `.env` file:
-
+## 🧩 Usage
+Start the Chatbot
 ```bash
-GOOGLE_MAPS_API_KEY=your_real_api_key_here
-OPENAI_API_KEY=your_openai_api_key_here
-
-
-2️⃣ Create a Python Virtual Environment
-
-python -m venv venv
-source venv/bin/activate        # on Linux/macOS
-venv\Scripts\activate           # on Windows
-
-pip install -r requirements.txt
-
-3️⃣ Validate Your Setup
-
-Run the following to confirm your environment works:
-# 1. Verify Google API key
-python test_googleMapsAPIKey.py
-
-# 2. Check Geocoding + Places API
-python test_geocode_Gplace_API.py
-
-# 3. Verify Gmail integration (optional)
-python test_gmail_sender.py
-
-✅ If you see "status": "OK" from both APIs → your Google Cloud setup is correct.
-❌ If you see "REQUEST_DENIED" → check that Billing is enabled and API keys are linked to your project.
-
-4️⃣ Run the ChatBot
 python main.py
+```
+Then simply type your question:
+```vbnet
+You: Give me the top 5 temples in Bangkok
+```
+The bot will:
+- Use OpenAI to generate top-rated recommendations
+- Fetch accurate coordinates via Google APIs
+- Offer commands like:
+```pgsql
+💡 Type 'map'      → View results on an interactive HTML map  
+💡 Type 'export'   → Save locations to pigeon_places.kml  
+💡 Type 'email'    → Email the session summary  
+💡 Type 'exit'     → Quit the program
+```
 
-Example interaction:
-🌍 Welcome to Places AI ChatBot (TEST MODE)!
-You: give me the top 5 temples in Bangkok
-...
-💡 Tip: Type 'map' to view all locations
-💡 Tip: Type 'export' to export as KML
-💡 Tip: Type 'email' to email the conversation log
+--------------------
 
 
-5️⃣ Optional: Export and View on Google Maps
+## 🗺️ Google Maps Integration <a name="google-maps-integration"></a>
 
-1. Type export in the chatbot → generates pigeon_places.kml.
-2. Visit Google My Maps: https://www.google.com/maps/d/
-3. Create a new map → click Import → select the KML file.
-4. Your AI-recommended locations will appear as markers.
+**🔹 Step 1 — Create Your Custom Map**
+1. Go to Google My Maps(https://www.google.com/maps/d/)
+2. Click “+ Create a New Map”
+3. Rename it (e.g. my_travel_map)
+4. Optionally, click “Add layer” to organize your points (e.g. Temples, Beaches, Restaurants)
 
-🧪 Test Scripts Included
-| File                         | Purpose                                            |
-| ---------------------------- | -------------------------------------------------- |
-| `test_googleMapsAPIKey.py`   | Checks if your API key is loaded correctly         |
-| `test_geocode_Gplace_API.py` | Confirms Geocoding + Places APIs return valid data |
-| `test_gmail_sender.py`       | Tests Gmail connection & email sending             |
-| `.env`                       | Stores private API keys                            |
+**🔹 Step 2 — Import Your KML File**
+
+After exporting your .kml file from TravelMind AI:
+
+1. In your My Maps project, click on the layer you want to import into
+2. Click “Import”
+3. Either:
+   - Drag & Drop your exported file (e.g. pigeon_places.kml), or
+   - Choose “Select a file from Google Drive” if you’ve uploaded it there
+4. Wait a few seconds — your markers will appear on the map
+5. You can create multiple layers and import multiple kml files
+
+**🔹 Step 3 — View Your Map in the Google Maps App**
+
+1. Open the Google Maps app on your phone
+2. Tap Saved → Maps (or Your places → Maps)
+3. You’ll see your custom map (e.g. my_travel_map) under “Maps you’ve created in My Maps”
+4. Tap it to open — your custom map loads inside standard Google Maps
+5. If location services are enabled, you’ll see your live position relative to your markers
+
+**🔹 Step 4 — Switch Between Custom and Regular Maps**
+
+- To return to the standard Google Map, tap the back arrow or close the custom map tab
+- To reopen it, go again to Saved → Maps → my_travel_map
+
+**🔹 Step 5 — Removing or Cleaning Up Your Custom Map**
+
+If you want to remove it later:
+
+1. Visit Google My Maps(https://www.google.com/maps/d/) on desktop
+2. Open your map (my_travel_map)
+3. You can:
+   - Delete individual markers or layers, or
+   - Click Menu → Delete map to remove it completely
+4. Once deleted, it disappears from your Google Maps app as well
+
+**🔹 Step 6 — Offline Use During Travel**
+
+Before traveling:
+
+1. Open the Google Maps app
+2. Go to Offline maps → Select your area (e.g. Thailand) → Download
+3. You can now use your custom map offline with all markers visible
+
+
+## 📁 Project Structure
+```
+AI-Places-Explorer/
+│
+├── main.py                     # Chat loop + LangChain/OpenAI integration
+├── maps_handler.py              # Google Maps API logic + map generation
+├── prompt.py                    # Custom prompt template for location queries
+├── gmail_sender.py              # Optional Gmail integration
+├── test_geocode_Gplace_API.py   # Test Google Geocoding & Places API responses
+├── test_googleMapsAPIKey.py     # Verify .env key loading
+├── test_gmail_sender.py         # Test email sending
+├── requirements.txt             # Dependencies
+├── .env                         # Environment variables (not shared)
+└── README.md                    # Project documentation
+```
+
+## 🧰 Customization
+1. Change OpenAI Model
+
+In main.py, update:
+```python
+model = ChatOpenAI(
+    model="gpt-5",  # or "gpt-4o"
+    temperature=0.7,
+    api_key=openai_api_key
+)
+```
+3. Change Export Filename
+```python
+def export_to_kml(self, filename="custom_places.kml"):
+```
+
+## 🤝 Contributing
+
+1. Fork this repository
+2. Create a new branch (feature-name)
+3. Commit your changes
+4. Push and submit a Pull Request
+Contributions and suggestions are welcome!
+
+
+<div align="center">
+Developed with ❤️ by Elias Kamyab
+</div>

@@ -124,6 +124,7 @@ class MapsHandlerTest:
         for name, lat, lon in self.locations:
             folium.Marker([lat, lon], popup=name).add_to(fmap)
 
+        # if u type 'map' a file will be generated based on the koordinates for folium visualization
         map_file = "ai_places_map.html"
         fmap.save(map_file)
         webbrowser.open("file://" + os.path.realpath(map_file))
@@ -137,7 +138,7 @@ class MapsHandlerTest:
             for i, (name, lat, lon) in enumerate(self.locations):
                 print(f"{i+1}. {name}: ({lat:.5f}, {lon:.5f})")
 
-
+    # kml file is necessary for creating a customize map in your google maps
     def export_to_kml(self, filename="pigeon_places.kml"):
         """Export current locations to a KML file for Google My Maps"""
         kml = ['<?xml version="1.0" encoding="UTF-8"?>',
