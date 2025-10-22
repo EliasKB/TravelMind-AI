@@ -9,9 +9,9 @@
 - [Installation](#-installation)
 - [Configuration](#-configuration)
 - [Usage](#-usage)
-- [Google My Maps Integration](#-Google-My-Maps-Integration)
+- [Google Maps Integration](#-google-maps-integration)
 - [Project Structure](#-Project-Structure)
-- [Google Cloud Setup](#-Google-Cloud-Setup)
+- [Google Cloud Setup](#-google-cloud-setup)
 - [Gmail Setup](#-Gmail-Setup)
 - [Testing the APIs](#-Testing-the-APIs)
 - [Customization](#-Customization)
@@ -154,7 +154,7 @@ The bot will:
 --------------------
 
 
-## 🗺️ Google My Maps Integration
+## 🗺️ Google Maps Integration
 
 **🔹 Step 1 — Create Your Custom Map**
 1. Go to Google My Maps(https://www.google.com/maps/d/)
@@ -169,9 +169,10 @@ After exporting your .kml file from TravelMind AI:
 1. In your My Maps project, click on the layer you want to import into
 2. Click “Import”
 3. Either:
-- Drag & Drop your exported file (e.g. pigeon_places.kml), or
-- Choose “Select a file from Google Drive” if you’ve uploaded it there
+   - Drag & Drop your exported file (e.g. pigeon_places.kml), or
+   - Choose “Select a file from Google Drive” if you’ve uploaded it there
 4. Wait a few seconds — your markers will appear on the map
+5. You can create multiple layers and import multiple kml files
 
 **🔹 Step 3 — View Your Map in the Google Maps App**
 
