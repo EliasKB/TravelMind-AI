@@ -4,18 +4,18 @@
 
 ## 📋 Table of Contents
 
-- [Features](#features)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [Google Maps Integration](#google-maps-integration)
-- [Project Structure](#project-structure)
-- [Google Cloud Setup](#google-cloud-setup)
-- [Gmail Setup](#gmail-setup)
-- [Testing the APIs](#testing-the-apis)
-- [Customization](#customization)
-- [Contributing](#contributing)
+- [Features](#-features)
+- [Prerequisites](#-prerequisites)
+- [Installation](#-installation)
+- [Configuration](#-configuration)
+- [Usage](#-usage)
+- [Google Maps Integration](#-google-maps-integration)
+- [Project Structure](#-Project-Structure)
+- [Google Cloud Setup](#-google-cloud-setup)
+- [Gmail Setup](#-Gmail-Setup)
+- [Testing the APIs](#-Testing-the-APIs)
+- [Customization](#-Customization)
+- [Contributing](#-Contributing)
  
 ## ✨ Features
 
@@ -80,7 +80,7 @@ graph TD;
     F --> H[KML File Export];
 ```
 
-## 🗺️ Google Cloud Setup
+## 🗺️ Google Cloud Setup <a name="google-cloud-setup"></a>
 
 Step 1: Create a Project
 1. Visit [Google Cloud Console](https://console.cloud.google.com/)
@@ -154,7 +154,7 @@ The bot will:
 --------------------
 
 
-## 🗺️ Google Maps Integration
+## 🗺️ Google Maps Integration <a name="google-maps-integration"></a>
 
 **🔹 Step 1 — Create Your Custom Map**
 1. Go to Google My Maps(https://www.google.com/maps/d/)
