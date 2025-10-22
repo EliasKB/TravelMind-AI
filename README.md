@@ -80,6 +80,7 @@ graph TD;
 ```
 
 ## 🗺️ Google Cloud Setup
+
 Step 1: Create a Project
 1. Visit [Google Cloud Console](https://console.cloud.google.com/)
 2. Create a new project or select existing one
