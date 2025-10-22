@@ -4,18 +4,18 @@
 
 ## 📋 Table of Contents
 
-- [Features](#-features)
-- [Prerequisites](#-prerequisites)
-- [Installation](#-installation)
-- [Configuration](#-configuration)
-- [Usage](#-usage)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
 - [Google Maps Integration](#google-maps-integration)
-- [Project Structure](#-Project-Structure)
+- [Project Structure](#project-structure)
 - [Google Cloud Setup](#google-cloud-setup)
-- [Gmail Setup](#-Gmail-Setup)
-- [Testing the APIs](#-Testing-the-APIs)
-- [Customization](#-Customization)
-- [Contributing](#-Contributing)
+- [Gmail Setup](#gmail-setup)
+- [Testing the APIs](#testing-the-apis)
+- [Customization](#customization)
+- [Contributing](#contributing)
  
 ## ✨ Features
 
