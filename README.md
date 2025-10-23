@@ -101,6 +101,10 @@ Step 4: Enable Billing
 Each Google Maps API key must be attached to a billing account —
 this ensures requests to the APIs are authorized. At the fist time, you will recieve 300$ dollar for free for the first 90 days.
 
+Step 5: Create an OpenAI API Key
+1. Visit [OpenAI Platform](https://platform.openai.com/api-keys).
+2. Click **"Create new secret key"** or select an existing one.
+3. You will receive a limited number of free credits. If not, you may need to purchase additional ones.
 
 ## 📧 Gmail Setup
 
